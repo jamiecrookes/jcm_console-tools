@@ -246,4 +246,18 @@ function Show-ConsoleMenu {
     }
 }
 
-Export-ModuleMember -Function Write-LxMessage, Write-GlyphMessage, Show-ConsoleMenu
+function Show-WhoLogged {
+    <###################################################################################
+    .SYNOPSIS
+        Show-WhoLogged
+    .DESCRIPTION
+        This function will output a list in various formats of the users currently
+        logged into the system.
+    .EXAMPLE
+        Show-WhoLogged
+    .NOTES
+        <none>
+    ###################################################################################>
+}
+
+Export-ModuleMember -Function Write-LxMessage, Write-GlyphMessage, Show-ConsoleMenu, Show-WhoLogged
